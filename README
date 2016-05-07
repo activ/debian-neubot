@@ -1,0 +1,11 @@
+Neubot is a R&D project on measuring Internet from the edges by the Nexa Center for Internet & Society at Politecnico di Torino (DAUIN). 
+
+docker run -d \
+—net=host \
+-p 9774:9774 \
+--name=<container name> \
+-v <path for config files>:/config \
+-v /etc/localtime:/etc/localtime:ro \
+-e PUID=<UID for user> \
+-e PGID=<GID for user> \
+debian-neubot
